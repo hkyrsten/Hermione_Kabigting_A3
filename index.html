@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title> Hermione's Portoflio Assignment 3, Created in 01/12/25</title>
+  <!--NOTE to self: this is a new file with the same content as my original file, reminder that netnet crashed so a new one was made-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Climate+Crisis&display=swap" rel="stylesheet">
@@ -81,6 +82,83 @@ Date retrieved: [December 3, 2025] */
     background-color: #FDA9E4;
     color: black;
   }
+
+/* I'm putting this to make sure all the content from all the sections are within the 1200px contatiner*/
+  section {
+      min-height: 700px;
+      padding: 160px 0 100px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+/*
+Code copied from: [https://www.w3schools.com/css/css_background_image.aspp]
+Author: [W3Schools]
+Name: [CSS background-image]
+Description: [How to put a background image behind text]
+Date retrieved: [December 3, 2025] */
+  #section0 {
+    position: relative;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding-top: 60px;
+    max-width: none;
+    margin: 0;
+  }
+  /*
+Cde copied from: [https://www.w3schools.com/cssref/pr_gen_content.php & https://www.w3schools.com/cssref/css_pr_inset.php]
+Author: [W3Schools]
+Name: [CSS content Property & CSS inset Property]
+Description: [making sure the content has the right position & setting the distance between the elements]
+Date retrieved: [December 3, 2025] */
+  #section0::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); 
+  }
+/*
+Code copied from: [https://www.w3schools.com/css/css_background_image.aspp]
+Author: [W3Schools]
+Name: [CSS background-image]
+Description: [How to put a background image behind text]
+Date retrieved: [December 3, 2025] */
+  #section0 * {
+    position: relative;
+    z-index: 1;
+  }
+/*
+Code copied from: [https://www.w3schools.com/css/css_background_image.aspp]
+Author: [W3Schools]
+Name: [CSS background-image]
+Description: [How to put a background image behind text]
+Date retrieved: [December 3, 2025] */
+  #section0 > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*
+Code copied from: [https://www.w3schools.com/cssref/pr_pos_overflow.php]
+Author: [W3Schools]
+Name: [CSS overflow property]
+Description: [specifies what should happen if content overflows an element's box]
+Date retrieved: [December 3, 2025] */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
